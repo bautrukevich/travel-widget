@@ -30,5 +30,11 @@
   "bugs": {
     "url": "https://github.com/bautrukevich/travel-widget/issues"
   },
-  "homepage": "https://github.com/bautrukevich/travel-widget#readme"
+  "homepage": "https://github.com/bautrukevich/travel-widget#readme",
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ]
 }
