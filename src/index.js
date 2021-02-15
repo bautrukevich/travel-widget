@@ -1,3 +1,4 @@
+import './style.css';
 import { h, render } from 'preact'
 import htm from 'htm'
 
