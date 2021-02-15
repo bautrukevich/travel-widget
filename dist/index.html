@@ -5,6 +5,26 @@
     <title>Travel Widget Demo</title>
   </head>
   <body>
+    <!--Default config -->
+    <div data-travel-widget></div>
+
+    <!--With "en" locale -->
+    <div data-travel-widget data-locale="en"></div>
+
+    <!--With "ru" locale -->
+    <div data-travel-widget data-locale="ru"></div>
+
     <script src="travel-widget.js"></script>
+    <script type="module">
+      const $widgetElements = document.querySelectorAll('[data-travel-widget]')
+
+      $widgetElements.forEach($widgetElement => {
+        const locale = $widgetElement.dataset.locale || 'en'
+
+        createTravelWidget($widgetElement, {
+          locale,
+        })
+      })
+    </script>
   </body>
 </html>
