@@ -1,6 +1,11 @@
 import {html} from '../../utils/html'
 
-export const DatePicker = ({placeholder, tabIndex}: {placeholder: string, tabIndex: number}) => {
+interface Props {
+  placeholder: string,
+  tabIndex: number
+}
+
+export const DatePicker = ({placeholder, tabIndex}: Props) => {
   return html`
     <label class="widget__form-label">
       <input type="text" class="input widget__form-input" readonly

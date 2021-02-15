@@ -1,6 +1,10 @@
 import {html} from '../../utils/html'
 
-export const Title = ({text}: { text: string }) => {
+interface Props {
+  text: string
+}
+
+export const Title = ({text}: Props) => {
   return html`
     <p class='title widget__title'>${text}</p>`
 }

@@ -10,7 +10,12 @@ import {html} from '../../utils/html'
 /* Types */
 import {Translation} from '../../translations/types'
 
-export const Widget = ({action, translation}: {action: string, translation: Translation}) => {
+interface Props {
+  action: string,
+  translation: Translation
+}
+
+export const Widget = ({action, translation}: Props) => {
   return html`
     <div class="widget">
       <${Title} text="${translation.title}"/>
@@ -21,7 +26,8 @@ export const Widget = ({action, translation}: {action: string, translation: Tran
             <${DatePicker} placeholder="${translation.datepicker.to}" tabIndex="2"/>
           </div>
           <button class="button widget__submit-button" type="submit" tabindex="3">${translation.button}</button>
-        <//>
+        </
+        />
         <${Description} text="${translation.description}"/>
       </div>
     </div>`
