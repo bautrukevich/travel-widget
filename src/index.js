@@ -51,5 +51,7 @@ const Widget = () => {
     </div>`
 }
 
-render(html`
+const createTravelWidget = () => render(html`
   <${Widget}/>`, document.body)
+
+export default createTravelWidget

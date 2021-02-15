@@ -2,7 +2,7 @@
   "name": "@bautrukevich/travel-widget",
   "version": "0.1.0",
   "description": "Travel widget",
-  "main": "index.js",
+  "main": "dist/travel-widget.js",
   "dependencies": {
     "htm": "^3.0.4",
     "preact": "^10.5.12"
