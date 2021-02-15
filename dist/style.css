@@ -65,6 +65,10 @@ html, body {
   box-sizing: border-box;
 }
 
+.icon {
+  color: #4990E2;
+}
+
 .widget__input-icon {
   position: absolute;
   right: 10px;
