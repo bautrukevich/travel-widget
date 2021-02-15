@@ -1,20 +1,20 @@
-import './style.css';
-import { h, render } from 'preact'
+import './style.css'
+import {h, render, ComponentChildren} from 'preact'
 import htm from 'htm'
 
 const html = htm.bind(h)
 
-const Title = ({ text }) => {
+const Title = ({text}: { text: string }) => {
   return html`
     <p class='title widget__title'>${text}</p>`
 }
 
-const Description = ({ text }) => {
+const Description = ({text}: { text: string }) => {
   return html`
     <p class="description widget__description">${text}</p>`
 }
 
-const DatePicker = ({ placeholder, tabIndex }) => {
+const DatePicker = ({placeholder, tabIndex}: {placeholder: string, tabIndex: number}) => {
   return html`
     <label class="widget__form-label">
       <input type="text" class="input widget__form-input" readonly
@@ -27,7 +27,7 @@ const DatePicker = ({ placeholder, tabIndex }) => {
     </label>`
 }
 
-const Form = ({ action, children }) => {
+const Form = ({action, children}: {action: string, children: ComponentChildren}) => {
   return html`
     <form action="${action}" class="widget__form">${children}</form>`
 }
