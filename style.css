@@ -28,7 +28,7 @@ html, body {
   box-sizing: border-box;
 }
 
-.widget__container {
+.widget__body {
   display: flex;
   flex-direction: column;
 }
@@ -110,7 +110,7 @@ input:hover {
 }
 
 @media screen and (min-width: 440px) {
-  .widget__container {
+  .widget__body {
     flex-direction: column-reverse;
   }
   .widget__title {
@@ -161,7 +161,7 @@ input:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  .widget__container {
+  .widget__body {
     flex-direction: row-reverse;
   }
   .widget__description {
