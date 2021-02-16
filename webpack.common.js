@@ -9,9 +9,11 @@ module.exports = {
     libraryExport: 'default',
     path: path.resolve(__dirname, 'dist'),
   },
-  plugins: [new HtmlWebpackPlugin({
-    template: 'src/index.html'
-  })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html'
+    })
+  ],
   module: {
     rules: [
       {
