@@ -22,12 +22,11 @@ export const Widget = ({action, translation}: Props) => {
       <div class="widget__body">
         <${Form} action="${action}">
           <div class="widget__form-controls">
-            <${DatePicker} placeholder="${translation.datepicker.from}" tabIndex="1"/>
-            <${DatePicker} placeholder="${translation.datepicker.to}" tabIndex="2"/>
+            <${DatePicker} placeholder="${translation.datepicker.from}"/>
+            <${DatePicker} placeholder="${translation.datepicker.to}"/>
           </div>
-          <button class="button widget__submit-button" type="submit" tabindex="3">${translation.button}</button>
-        </
-        />
+          <button class="button widget__submit-button" type="submit">${translation.button}</button>
+        <//>
         <${Description} text="${translation.description}"/>
       </div>
     </div>`
