@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Travel Widget Demo</title><script defer="defer" src="travel-widget.js"></script></head><body><div data-travel-widget></div><br><div data-travel-widget data-locale="en"></div><br><div data-travel-widget data-locale="ru"></div><br><script src="travel-widget.js"></script><script type="module">const $widgetElements = document.querySelectorAll('[data-travel-widget]')
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Travel Widget Demo</title><script defer="defer" src="travel-widget.js"></script></head><body><div data-travel-widget></div><br><div data-travel-widget data-locale="en"></div><br><div data-travel-widget data-locale="ru"></div><br><script type="module">const $widgetElements = document.querySelectorAll('[data-travel-widget]')
 
       $widgetElements.forEach($widgetElement => {
         const locale = $widgetElement.dataset.locale || 'en'
